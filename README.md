@@ -36,3 +36,11 @@ foreach (JSONObject result in results.list)
 	}
 }
      
+
+Creating a json object with the JSON Object library:
+JSONObject contactJson = new JSONObject();
+contactJson.SetField("phone_number", "555-555-5555");
+JSONObject personJson = new JSONObject();
+personJson.SetField("first_name", "John");
+personJson.SetField("last_name", "Doe");
+contactJson.SetField("person", personJson)
